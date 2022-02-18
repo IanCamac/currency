@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  usd = '';
+  yen = ''
+  recibirYen(value: any) {
+    console.log('RECIBI ',value);
+    this.usd = value;
+  }
+  recibirUsd(value: any) {
+    this.yen = value
+  }
 }
